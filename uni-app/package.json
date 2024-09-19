@@ -1,0 +1,17 @@
+{
+  "name": "wangyue-uniapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": ""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dayjs": "^1.11.11",
+    "js-md5": "^0.8.3",
+    "sm-crypto": "^0.3.13"
+  },
+  "industrySDK": true
+}

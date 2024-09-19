@@ -1,0 +1,13 @@
+
+page {
+  height: 100%;
+}
+
+/* 水平间距 */
+/* 水平间距 */
+.home-page.data-v-92bb8f34::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  height: 0;
+  color: transparent;
+}
