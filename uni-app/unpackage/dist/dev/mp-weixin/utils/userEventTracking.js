@@ -31,6 +31,24 @@ const pages = [
     }
   },
   {
+    path: "pages/department/department",
+    style: {
+      navigationBarTitleText: "\u79D1\u5BA4\u4FE1\u606F"
+    }
+  },
+  {
+    path: "pages/department/details",
+    style: {
+      navigationBarTitleText: "\u79D1\u5BA4\u8BE6\u60C5"
+    }
+  },
+  {
+    path: "pages/notice/notice",
+    style: {
+      navigationBarTitleText: "\u516C\u544A\u54A8\u8BE2"
+    }
+  },
+  {
     path: "pages/login/login",
     style: {
       navigationBarTitleText: "\u767B\u5F55"
@@ -56,10 +74,16 @@ const tabBar = {
       text: "\u9996\u9875"
     },
     {
-      pagePath: "pages/orderList/orderList",
+      pagePath: "pages/department/department",
       iconPath: "static/imgs/tabbar/tabbar-order-default.png",
       selectedIconPath: "static/imgs/tabbar/tabbar-order-active.png",
-      text: "\u8BA2\u5355"
+      text: "\u79D1\u5BA4\u4FE1\u606F"
+    },
+    {
+      pagePath: "pages/notice/notice",
+      iconPath: "static/imgs/tabbar/tabbar-order-default.png",
+      selectedIconPath: "static/imgs/tabbar/tabbar-order-active.png",
+      text: "\u516C\u544A\u54A8\u8BE2"
     },
     {
       pagePath: "pages/me/me",
@@ -75,11 +99,30 @@ const globalStyle = {
   navigationBarBackgroundColor: "#fff",
   backgroundColor: "#f7f7f7"
 };
+const easycom = {
+  custom: {
+    "^u--(.*)": "@/node_modules/uview-plus/components/u-$1/u-$1.vue",
+    "^up-(.*)": "@/node_modules/uview-plus/components/u-$1/u-$1.vue",
+    "^u-([^-].*)": "@/node_modules/uview-plus/components/u-$1/u-$1.vue"
+  }
+};
+const condition = {
+  current: 0,
+  list: [
+    {
+      name: "",
+      path: "",
+      query: ""
+    }
+  ]
+};
 var pagesJson = {
   entryPagePath,
   pages,
   tabBar,
-  globalStyle
+  globalStyle,
+  easycom,
+  condition
 };
 const pagesConfig = pagesJson.pages;
 let userIpAndAddress = null;

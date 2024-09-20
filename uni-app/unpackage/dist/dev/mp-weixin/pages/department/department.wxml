@@ -1,0 +1,1 @@
+<uni-indexed-list wx:if="{{b}}" class="data-v-0628aff4" bindclick="{{a}}" u-i="0628aff4-0" bind:__l="__l" u-p="{{b}}"/>

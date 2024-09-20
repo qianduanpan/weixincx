@@ -1,12 +1,12 @@
 let BASE_URL = '';
 let envVersion = '';
 // #ifdef  MP-TOUTIAO
-envVersion = tt.getEnvInfoSync().microapp.envType;
+envVersion,'99' = tt.getEnvInfoSync().microapp.envType;
 // #endif
 
 // #ifndef MP-TOUTIAO
-const accountInfo = uni.getAccountInfoSync();
-envVersion = accountInfo.miniProgram.envVersion;
+// const accountInfo = uni.getAccountInfoSync();
+// envVersion = accountInfo.miniProgram.envVersion;
 // #endif
 
 switch (envVersion) {

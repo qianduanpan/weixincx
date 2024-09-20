@@ -1,0 +1,30 @@
+/* 水平间距 */
+/* 水平间距 */
+.head.data-v-259fb574 {
+  margin-top: 30px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+}
+.head .avator.data-v-259fb574 {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+}
+.head .box-info.data-v-259fb574 {
+  padding-left: 30px;
+  flex: 1;
+}
+.head .box-info .nickname.data-v-259fb574 {
+  font-weight: 400;
+  font-size: 32px;
+  color: #000000;
+  line-height: 36px;
+}
+.head .box-info .phone.data-v-259fb574 {
+  padding-top: 20px;
+  font-weight: 400;
+  font-size: 24px;
+  color: #000000;
+  line-height: 36px;
+}

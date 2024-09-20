@@ -9,9 +9,18 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@vant/weapp": "^1.11.6",
     "dayjs": "^1.11.11",
     "js-md5": "^0.8.3",
-    "sm-crypto": "^0.3.13"
+    "pinyin": "^4.0.0-alpha.2",
+    "sm-crypto": "^0.3.13",
+    "uview-plus": "^3.3.33",
+    "uview-ui": "^2.0.37",
+    "vant": "^4.9.6"
   },
-  "industrySDK": true
+  "industrySDK": true,
+  "devDependencies": {
+    "scss": "^0.2.4",
+    "unplugin-auto-import": "^0.18.3"
+  }
 }

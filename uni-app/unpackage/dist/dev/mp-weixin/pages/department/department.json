@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "科室信息",
+  "usingComponents": {
+    "uni-indexed-list": "../../uni_modules/uni-indexed-list/components/uni-indexed-list/uni-indexed-list"
+  }
+}
