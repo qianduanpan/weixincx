@@ -9835,4 +9835,5 @@ exports.resolveComponent = resolveComponent;
 exports.s = s;
 exports.src = src;
 exports.t = t;
+exports.unref = unref;
 exports.useRoute = useRoute;

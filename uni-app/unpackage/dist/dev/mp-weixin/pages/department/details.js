@@ -3,13 +3,14 @@ var common_vendor = require("../../common/vendor.js");
 const _sfc_main = {
   setup(__props) {
     const route = common_vendor.useRoute();
-    const param1 = common_vendor.ref(route.query.param1);
+    console.log(route.query, "000");
+    const param1 = route.query.param1;
     common_vendor.onMounted(() => {
       console.log("Params received:", param1.value);
     });
     return (_ctx, _cache) => {
       return {
-        a: common_vendor.t(param1.value)
+        a: common_vendor.t(common_vendor.unref(param1))
       };
     };
   }

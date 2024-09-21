@@ -7,16 +7,13 @@
 			  <view class="phone">18737620021</view>
 		  </view>
 	  </view>
-	   <view>
-		  <van-button type="primary">主要按钮1</van-button>
-	   </view>
 	  <view>
 			  <button type="primary"  @click="handleClick">导航</button>
 	  </view>
-	  <view class="page-section page-section-gap">
+	  <!-- <view class="page-section page-section-gap">
 	  	<map style="width: 750px; height: 300px;" :latitude="latitude" :longitude="longitude" :markers="covers">
 	  	</map>
-	  </view>
+	  </view> -->
    </view>
 </template>
 

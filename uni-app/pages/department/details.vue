@@ -9,7 +9,8 @@
 	import { useRoute } from 'vue-router'
 	 
 	const route = useRoute()
-	const param1 = ref(route.query.param1)
+	console.log(route.query,'000')
+	const param1 = route.query.param1
 
 	onMounted(() => {
 	  console.log('Params received:', param1.value)

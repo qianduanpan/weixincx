@@ -1,16 +1,12 @@
 "use strict";
 var common_vendor = require("../../common/vendor.js");
 var _imports_0 = "/static/imgs/me/avator.png";
-if (!Array) {
-  const _component_van_button = common_vendor.resolveComponent("van-button");
-  _component_van_button();
-}
 const _sfc_main = {
   setup(__props) {
     common_vendor.ref("0");
-    const latitude = common_vendor.ref("39.909");
-    const longitude = common_vendor.ref("116.39742");
-    const covers = common_vendor.ref([{
+    common_vendor.ref("39.909");
+    common_vendor.ref("116.39742");
+    common_vendor.ref([{
       latitude: 34.352,
       longitude: 113.38,
       iconPath: "@/static/imgs/me/avator.png"
@@ -56,13 +52,7 @@ const _sfc_main = {
       return {
         a: _imports_0,
         b: common_vendor.o((...args) => _ctx.info && _ctx.info(...args)),
-        c: common_vendor.p({
-          type: "primary"
-        }),
-        d: common_vendor.o(handleClick),
-        e: latitude.value,
-        f: longitude.value,
-        g: covers.value
+        c: common_vendor.o(handleClick)
       };
     };
   }

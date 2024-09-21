@@ -26,8 +26,8 @@ const pages = [
   {
     path: "pages/home/home",
     style: {
-      backgroundColor: "#f5f5f5",
-      navigationBarTitleText: "\u9996\u9875"
+      navigationBarTitleText: "\u9996\u9875",
+      navigationStyle: "custom"
     }
   },
   {
@@ -81,8 +81,8 @@ const tabBar = {
     },
     {
       pagePath: "pages/notice/notice",
-      iconPath: "static/imgs/tabbar/tabbar-order-default.png",
-      selectedIconPath: "static/imgs/tabbar/tabbar-order-active.png",
+      iconPath: "static/imgs/tabbar/tabbar-notice-default.png",
+      selectedIconPath: "static/imgs/tabbar/tabbar-notice-active.png",
       text: "\u516C\u544A\u54A8\u8BE2"
     },
     {

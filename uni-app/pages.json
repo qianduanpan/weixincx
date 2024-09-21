@@ -4,10 +4,17 @@
     {
       "path": "pages/home/home",
       "style": {
-        "backgroundColor": "#f5f5f5",
-        "navigationBarTitleText": "首页"
+        "navigationBarTitleText": "首页",
+		"navigationStyle": "custom"
       }
     },
+	{
+	      "path": "pages/home/departInfo", // 科室介绍
+	      "style": {
+	        // 页面样式配置
+			"navigationBarTitleText": "科室介绍"
+	      }
+	},
 	{
 	  "path": "pages/department/department",
 	  "style": {
@@ -61,8 +68,8 @@
       },
 	  {
 	    "pagePath": "pages/notice/notice",
-	    "iconPath": "static/imgs/tabbar/tabbar-order-default.png",
-	    "selectedIconPath": "static/imgs/tabbar/tabbar-order-active.png",
+	    "iconPath": "static/imgs/tabbar/tabbar-notice-default.png",
+	    "selectedIconPath": "static/imgs/tabbar/tabbar-notice-active.png",
 	    "text": "公告咨询"
 	  },
       {
