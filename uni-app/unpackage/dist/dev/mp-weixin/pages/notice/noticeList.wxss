@@ -1,0 +1,31 @@
+/* 水平间距 */
+/* 水平间距 */
+.guide.data-v-296bd984 {
+  height: 1340rpx;
+  background: #FFFFFF;
+  border-radius: 16rpx;
+  border: 0px solid #000000;
+}
+.guide .header.data-v-296bd984 {
+  padding: 24rpx;
+  font-family: PingFang SC;
+  font-weight: bold;
+  font-size: 32rpx;
+  color: #37343F;
+  line-height: 48rpx;
+}
+.guide .header .time.data-v-296bd984 {
+  font-family: PingFang SC;
+  font-weight: 500;
+  font-size: 24rpx;
+  color: #999999;
+  margin-top: 31rpx;
+}
+.guide .content.data-v-296bd984 {
+  padding: 56rpx 59rpx 0 39rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  font-size: 28rpx;
+  color: #37343F;
+  line-height: 56rpx;
+}

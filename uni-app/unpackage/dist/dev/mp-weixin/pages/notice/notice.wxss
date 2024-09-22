@@ -5,10 +5,70 @@ page {
 
 /* 水平间距 */
 /* 水平间距 */
-.home-page.data-v-0b680ac6 {
-  height: 200rpx;
-  border: 2px solid yellow;
-  margin-top: 120rpx;
+.uni-tabs-bar.data-v-0b680ac6 {
+  display: flex;
+}
+.uni-tabs-bar .uni-tabs-name.data-v-0b680ac6 {
+  flex: 1;
+  height: 90rpx;
+  line-height: 90rpx;
+  text-align: center;
+  background: #FFFFFF;
+}
+.uni-tabs-bar .uni-tabs-name .uni-tabs-title.data-v-0b680ac6 {
+  font-family: PingFang SC;
+  font-weight: 500;
+  font-size: 28rpx;
+  color: #999999;
+}
+.uni-tabs-bar .uni-tabs-name .uni-tabs-active.data-v-0b680ac6 {
+  font-family: PingFang SC;
+  font-weight: bold;
+  font-size: 28rpx;
+  color: #3F7EFA;
+}
+.uni-tabs-bar .uni-tabs-name .uni-tabs-flag.data-v-0b680ac6 {
+  width: 24rpx;
+  height: 6rpx;
+  background: #3F7EFA;
+  border-radius: 3rpx;
+  border: 0px solid #000000;
+  margin: -15rpx auto;
+}
+.content.data-v-0b680ac6 {
+  margin: 24rpx;
+}
+.content .guide_list.data-v-0b680ac6 {
+  height: 208rpx;
+  background: #FFFFFF;
+  border-radius: 16rpx;
+  display: flex;
+  margin-bottom: 24rpx;
+}
+.content .guide_list .guide_img.data-v-0b680ac6 {
+  margin: 24rpx;
+  width: 240rpx;
+  height: 160rpx;
+  background: #666666;
+  border-radius: 16rpx;
+  border: 0px solid #000000;
+}
+.content .guide_list .guide_right.data-v-0b680ac6 {
+  margin: 24rpx;
+}
+.content .guide_list .guide_right .title.data-v-0b680ac6 {
+  font-family: PingFang SC;
+  font-weight: 500;
+  font-size: 28rpx;
+  color: #37343F;
+  line-height: 44rpx;
+  margin-bottom: 40rpx;
+}
+.content .guide_list .guide_right .time.data-v-0b680ac6 {
+  font-family: PingFang SC;
+  font-weight: 500;
+  font-size: 24rpx;
+  color: #999999;
 }
 .home-page.data-v-0b680ac6::-webkit-scrollbar {
   display: none;

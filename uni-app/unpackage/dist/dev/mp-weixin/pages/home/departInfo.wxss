@@ -129,7 +129,7 @@ page {
   border: 0px solid #000000;
   text-align: center;
 }
-.home-page .center .expert_list .right .right_depart span.data-v-fd415cee {
+.home-page .center .expert_list .right .right_depart text.data-v-fd415cee {
   font-family: PingFang SC;
   font-weight: bold;
   font-size: 20rpx;

@@ -33,6 +33,12 @@ const pages = [
   {
     path: "pages/home/expertInfo",
     style: {
+      navigationBarTitleText: "\u4E13\u5BB6\u5217\u8868"
+    }
+  },
+  {
+    path: "pages/home/expertUserInfo",
+    style: {
       navigationBarTitleText: "\u4E13\u5BB6\u4ECB\u7ECD"
     }
   },
@@ -73,6 +79,12 @@ const pages = [
     }
   },
   {
+    path: "pages/notice/noticeList",
+    style: {
+      navigationBarTitleText: "\u54A8\u8BE2\u8BE6\u60C5"
+    }
+  },
+  {
     path: "pages/login/login",
     style: {
       navigationBarTitleText: "\u767B\u5F55"
@@ -81,7 +93,14 @@ const pages = [
   {
     path: "pages/me/me",
     style: {
-      navigationBarTitleText: "\u6211\u7684"
+      navigationBarTitleText: "\u6211\u7684",
+      navigationStyle: "custom"
+    }
+  },
+  {
+    path: "pages/me/suggestion",
+    style: {
+      navigationBarTitleText: "\u6295\u8BC9\u5EFA\u8BAE"
     }
   }
 ];

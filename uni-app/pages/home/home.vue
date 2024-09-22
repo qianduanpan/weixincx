@@ -1,7 +1,7 @@
 <template>
   <view class="home-page"> 
-	   <view class="top">
-		  <span>首页</span>
+	   <view class="top" style="background-image: url('/static/imgs/home/homeBg.png')">
+		  <text>首页</text>
 		  <image class="bg" src="../../static/imgs/home/lunbo.png" mode=""></image>
 	   </view>
 	   <view class="center">
@@ -13,8 +13,8 @@
 				    		平顶山市第六人民医院
 				    	</view>
 						<view class="right_bottom">
-							<span>三级</span>
-							<span>公立</span>
+							<text>三级</text>
+							<text>公立</text>
 						</view>
 				    </view>
 				</view>
@@ -30,7 +30,7 @@
 				</view>
 			</view>
 			<view class="btn">
-				 <span>一键咨询</span>
+				 <text>一键咨询</text>
 			</view>
 		    <view class="nav">
 		    	<view class="list" @click="expertClick">
@@ -139,30 +139,14 @@ page {
 }
 </style>
 <style lang="scss" scoped>
-	/* 使用自定义样式 */
-	/* #ifdef H5 */
-	/* 对于H5，可以直接使用背景图片 */
-	.home-page .top {
-	  background-image: url('@/static/imgs/home/homeBg.png');
-	  background-size: cover;
-	  background-position: center;
-	}
-	/* #endif */
-	 
-	/* #ifdef MP-WEIXIN */
-	/* 对于微信小程序，需要使用视图层样式 */
-	.home-page .top {
-	  background-image: url('/static/imgs/home/homeBg.png');
-	  background-size: cover;
-	  background-position: center;
-	}
-	/* #endif */
 .home-page{
   .top{
 	width: 750rpx;
 	height: 380rpx;
 	text-align: center;
-	span{
+	background-size: cover;
+	background-position: center;
+	text{
 		display: inline-block;
         margin-top: 114rpx;
 		font-family: PingFang SC;
@@ -201,7 +185,7 @@ page {
 					 margin-bottom: 24rpx;
 				 }
 				 .right_bottom{
-					 span{
+					 text{
 						 text-align: center;
 						 display: inline-block;
 						 width: 80rpx;
@@ -258,7 +242,7 @@ page {
 		  border-radius: 16rpx;
 		  border: 0px solid #000000;
 		  margin: 24rpx 0;
-		  span{
+		  text{
 			  font-family: PingFang SC;
 			  font-weight: bold;
 			  font-size: 28rpx;

@@ -11,7 +11,7 @@
 				<view class="right">
 					<view class="right_name">刘冠军 副主任医师</view>
 					<view class="right_depart">
-						<span>精神科门诊</span>
+						<text>精神科门诊</text>
 					</view>
 					<view class="right_good">擅长：精神疾病临床诊断</view>
 				</view>
@@ -24,7 +24,7 @@
 		 	<view class="right">
 		 		<view class="right_name">刘冠军 副主任医师</view>
 		 		<view class="right_depart">
-		 			<span>精神科门诊</span>
+		 			<text>精神科门诊</text>
 		 		</view>
 		 		<view class="right_good">擅长：精神疾病临床诊断</view>
 		 	</view>
@@ -36,7 +36,7 @@
 		 	<view class="right">
 		 		<view class="right_name">刘冠军 副主任医师</view>
 		 		<view class="right_depart">
-		 			<span>精神科门诊</span>
+		 			<text>精神科门诊</text>
 		 		</view>
 		 		<view class="right_good">擅长：精神疾病临床诊断</view>
 		 	</view>
@@ -48,7 +48,7 @@
 		 	<view class="right">
 		 		<view class="right_name">刘冠军 副主任医师</view>
 		 		<view class="right_depart">
-		 			<span>精神科门诊</span>
+		 			<text>精神科门诊</text>
 		 		</view>
 		 		<view class="right_good">擅长：精神疾病临床诊断</view>
 		 	</view>
@@ -60,7 +60,7 @@
 		 	<view class="right">
 		 		<view class="right_name">刘冠军 副主任医师</view>
 		 		<view class="right_depart">
-		 			<span>精神科门诊</span>
+		 			<text>精神科门诊</text>
 		 		</view>
 		 		<view class="right_good">擅长：精神疾病临床诊断</view>
 		 	</view>
@@ -127,7 +127,7 @@ page {
 				 border-radius: 8rpx;
 				 border: 0px solid #000000;
 				 text-align: center;
-				  span{
+				  text{
 					  font-family: PingFang SC;
 					  font-weight: bold;
 					  font-size: 20rpx;

@@ -1,5 +1,22 @@
 /* 水平间距 */
 /* 水平间距 */
+.home-page.data-v-0628aff4 {
+  width: 100vw;
+  height: 100vh;
+  background-color: #ffffff;
+}
+.home-page .serch_list.data-v-0628aff4 {
+  height: 100vh;
+  margin-top: 50rpx;
+  /* 或者 Vue 3.x 中使用 */
+}
+.home-page .serch_list.data-v-0628aff4 .uni-indexed-list .uni-indexed-list__list {
+  background-color: #ffffff;
+}
+.home-page .serch_list.data-v-0628aff4 .uni-indexed-list {
+  position: absolute;
+  top: 100rpx;
+}
 .home-page.data-v-0628aff4::-webkit-scrollbar {
   display: none;
   width: 0;

@@ -16,7 +16,7 @@
 			</uni-forms-item>
 		</uni-forms>
 		 <view class="commit" >
-		 	<span>确认提交</span>
+		 	<text>确认提交</text>
 		 </view>
 	  </view>
   </view>
@@ -69,7 +69,7 @@
 		  background: linear-gradient(90deg, #0BBAFB, #4285EC);
 		  border-radius: 12rpx;
 		  margin: 32px 0;
-		  span{
+		  text{
 			  font-family: PingFang SC;
 			  font-weight: 800;
 			  font-size: 28rpx;

@@ -2,14 +2,17 @@
   "pages": [
     "pages/home/home",
     "pages/home/expertInfo",
+    "pages/home/expertUserInfo",
     "pages/home/departInfo",
     "pages/home/guideInfo",
     "pages/home/guideInfoList",
     "pages/department/department",
     "pages/department/details",
     "pages/notice/notice",
+    "pages/notice/noticeList",
     "pages/login/login",
-    "pages/me/me"
+    "pages/me/me",
+    "pages/me/suggestion"
   ],
   "window": {
     "navigationBarTextStyle": "black",

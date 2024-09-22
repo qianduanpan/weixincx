@@ -1,6 +1,11 @@
 "use strict";
 var common_vendor = require("../../common/vendor.js");
-var _imports_0 = "/static/imgs/me/avator.png";
+var _imports_0 = "/static/imgs/me/user.png";
+var _imports_1 = "/static/imgs/me/icon1.png";
+var _imports_2 = "/static/imgs/me/jiantou.png";
+var _imports_3 = "/static/imgs/me/icon2.png";
+var _imports_4 = "/static/imgs/me/icon3.png";
+var _imports_5 = "/static/imgs/me/icon4.png";
 const _sfc_main = {
   setup(__props) {
     common_vendor.ref("0");
@@ -15,6 +20,11 @@ const _sfc_main = {
       longitude: 113.39,
       iconPath: "@/static/imgs/me/avator.png"
     }]);
+    const suggestionClick = () => {
+      common_vendor.index.navigateTo({
+        url: `/pages/me/suggestion`
+      });
+    };
     const handleClick = () => {
       console.log("\u6309\u94AE\u88AB\u70B9\u51FB\u4E86\uFF01");
       common_vendor.index.openLocation({
@@ -51,8 +61,16 @@ const _sfc_main = {
     return (_ctx, _cache) => {
       return {
         a: _imports_0,
-        b: common_vendor.o((...args) => _ctx.info && _ctx.info(...args)),
-        c: common_vendor.o(handleClick)
+        b: _imports_1,
+        c: _imports_2,
+        d: _imports_3,
+        e: _imports_2,
+        f: common_vendor.o(handleClick),
+        g: _imports_4,
+        h: _imports_2,
+        i: common_vendor.o(suggestionClick),
+        j: _imports_5,
+        k: _imports_2
       };
     };
   }

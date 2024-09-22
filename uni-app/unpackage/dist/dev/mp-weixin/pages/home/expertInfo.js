@@ -1,9 +1,35 @@
 "use strict";
 var common_vendor = require("../../common/vendor.js");
+if (!Array) {
+  const _easycom_uni_search_bar2 = common_vendor.resolveComponent("uni-search-bar");
+  _easycom_uni_search_bar2();
+}
+const _easycom_uni_search_bar = () => "../../uni_modules/uni-search-bar/components/uni-search-bar/uni-search-bar.js";
+if (!Math) {
+  _easycom_uni_search_bar();
+}
 const _sfc_main = {
   setup(__props) {
+    const userInfoClickFn = (e) => {
+      common_vendor.index.navigateTo({
+        url: `/pages/home/expertUserInfo`
+      });
+    };
     return (_ctx, _cache) => {
-      return {};
+      return {
+        a: common_vendor.o(_ctx.search),
+        b: common_vendor.p({
+          radius: "100",
+          placeholder: "\u8BF7\u8F93\u5165\u533B\u751F\u59D3\u540D",
+          clearButton: "none",
+          cancelButton: "none"
+        }),
+        c: common_vendor.o(userInfoClickFn),
+        d: common_vendor.o(userInfoClickFn),
+        e: common_vendor.o(userInfoClickFn),
+        f: common_vendor.o(userInfoClickFn),
+        g: common_vendor.o(userInfoClickFn)
+      };
     };
   }
 };

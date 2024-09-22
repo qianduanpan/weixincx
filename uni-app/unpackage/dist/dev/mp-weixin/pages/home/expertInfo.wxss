@@ -5,45 +5,13 @@ page {
 
 /* 水平间距 */
 /* 水平间距 */
+.home-page .search.data-v-6a8961bf {
+  height: 104rpx;
+  background: #FFFFFF;
+  border: 0px solid #000000;
+}
 .home-page .center.data-v-6a8961bf {
   margin: 24rpx;
-}
-.home-page .center .expert_bottom .introduce_title.data-v-6a8961bf {
-  margin-top: 24rpx;
-  height: 96rpx;
-  background: #FFFFFF;
-  border-radius: 24rpx 24rpx 0rpx 0rpx;
-  border: 0px solid #000000;
-  display: flex;
-  padding: 32rpx 0 0 32rpx;
-}
-.home-page .center .expert_bottom .introduce_title .lot.data-v-6a8961bf {
-  width: 8rpx;
-  height: 32rpx;
-  background: #479EFF;
-  border-radius: 4rpx;
-  border: 0px solid #000000;
-  margin-top: 2px;
-}
-.home-page .center .expert_bottom .introduce_title .introduce_name.data-v-6a8961bf {
-  margin-left: 26rpx;
-  font-family: PingFang SC;
-  font-weight: 800;
-  font-size: 32rpx;
-  color: #333333;
-}
-.home-page .center .expert_bottom .introduce_content.data-v-6a8961bf {
-  text-indent: 2em;
-  /* 设置首行缩进为2em */
-  height: 480rpx;
-  background: #FFFFFF;
-  border-radius: 0rpx 0rpx 24rpx 24rpx;
-  font-family: PingFang SC;
-  font-weight: 500;
-  font-size: 26rpx;
-  color: #666666;
-  line-height: 56rpx;
-  padding: 0 32rpx 50rpx 32rpx;
 }
 .home-page .center .expert_list.data-v-6a8961bf {
   display: flex;
@@ -79,7 +47,7 @@ page {
   border: 0px solid #000000;
   text-align: center;
 }
-.home-page .center .expert_list .right .right_depart span.data-v-6a8961bf {
+.home-page .center .expert_list .right .right_depart text.data-v-6a8961bf {
   font-family: PingFang SC;
   font-weight: bold;
   font-size: 20rpx;

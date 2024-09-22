@@ -1,30 +1,91 @@
 /* 水平间距 */
 /* 水平间距 */
+.top.data-v-259fb574 {
+  height: 450rpx;
+  background-size: cover;
+  background-position: center;
+}
 .head.data-v-259fb574 {
-  margin-top: 30px;
-  height: 150px;
+  padding-top: 214rpx;
+  padding-bottom: 62rpx;
+  margin-left: 40rpx;
   display: flex;
   align-items: center;
 }
 .head .avator.data-v-259fb574 {
-  width: 130px;
-  height: 130px;
+  width: 112rpx;
+  height: 112rpx;
   border-radius: 50%;
 }
 .head .box-info.data-v-259fb574 {
-  padding-left: 30px;
+  padding-left: 23rpx;
   flex: 1;
 }
 .head .box-info .nickname.data-v-259fb574 {
-  font-weight: 400;
-  font-size: 32px;
-  color: #000000;
-  line-height: 36px;
+  font-family: PingFang SC;
+  font-weight: 800;
+  font-size: 32rpx;
+  color: #FFFFFF;
+  line-height: 40rpx;
 }
 .head .box-info .phone.data-v-259fb574 {
-  padding-top: 20px;
-  font-weight: 400;
-  font-size: 24px;
-  color: #000000;
-  line-height: 36px;
+  padding-top: 23rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  font-size: 28rpx;
+  color: #FFFFFF;
+}
+.contentBtn.data-v-259fb574 {
+  width: 686rpx;
+  margin: 0 auto;
+}
+.contentBtn .onebtn.data-v-259fb574 {
+  height: 113rpx;
+  line-height: 113rpx;
+  background: #FFFFFF;
+  border-radius: 16rpx 16rpx 0rpx 0rpx;
+  border-bottom: 1px solid #EEEEEE;
+  display: flex;
+  justify-content: space-between;
+}
+.contentBtn .onebtn .left.data-v-259fb574 {
+  margin-left: 32rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  font-size: 28rpx;
+  color: #333333;
+}
+.contentBtn .onebtn .left .icon_left.data-v-259fb574 {
+  width: 32rpx;
+  height: 32rpx;
+  vertical-align: middle;
+  margin-right: 24rpx;
+}
+.contentBtn .onebtn .right.data-v-259fb574 {
+  margin-right: 32rpx;
+}
+.contentBtn .onebtn .right .icon_right.data-v-259fb574 {
+  width: 14rpx;
+  height: 24rpx;
+  vertical-align: middle;
+}
+.contentBtn .fivebtn.data-v-259fb574 {
+  padding: 40rpx 32rpx;
+  background: #FFFFFF;
+  border-radius: 0rpx 0rpx 16rpx 16rpx;
+  border-bottom: 1px solid #EEEEEE;
+}
+.contentBtn .fivebtn .btn_list.data-v-259fb574 {
+  height: 92rpx;
+  line-height: 92rpx;
+  text-align: center;
+  background: linear-gradient(90deg, #0BBAFB, #4285EC);
+  border-radius: 12rpx;
+}
+.contentBtn .fivebtn .btn_list text.data-v-259fb574 {
+  font-family: PingFang SC;
+  font-weight: 500;
+  font-size: 28rpx;
+  color: #FFFFFF;
+  line-height: 32rpx;
 }

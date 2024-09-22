@@ -88,7 +88,7 @@
 	        // 页面样式配置
 			"navigationBarTitleText": "投诉建议"
 	      }
-	},
+	}
   ],
   "tabBar": {
     "color": "#ADADB2;",

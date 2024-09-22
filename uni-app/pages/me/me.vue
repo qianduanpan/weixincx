@@ -1,58 +1,57 @@
 <template>
   <view class="me-page">
-	  <view class="top">
-
-	   <view class="head">
+	  <view class="top" style="background-image: url('/static/imgs/me/topBg.png')">
+	    <view class="head">
 		  <image class="avator" src="@/static/imgs/me/user.png" mode=""></image>
 		  <view class="box-info">
 			  <view class="nickname">Andrew</view>
 			  <view class="phone">186****0899</view>
 		  </view>
-	  </view>
-	  <view class="contentBtn">
-		  <view class="onebtn">
-			 <view class="left">
-				<image class="icon_left" src="@/static/imgs/me/icon1.png" mode=""></image>
-			 	客服帮助
-			 </view>
-			 <view class="right">
-			 	<img class="icon_right" src="@/static/imgs/me/jiantou.png" alt="" />
-			 </view>
+	    </view>
+		  <view class="contentBtn">
+			  <view class="onebtn">
+				 <view class="left">
+					<image class="icon_left" src="@/static/imgs/me/icon1.png" mode=""></image>
+					客服帮助
+				 </view>
+				 <view class="right">
+					<img class="icon_right" src="@/static/imgs/me/jiantou.png" alt="" />
+				 </view>
+			  </view>
+			  <view class="onebtn" @click="handleClick">
+				<view class="left">
+					<image class="icon_left" src="@/static/imgs/me/icon2.png" mode=""></image>
+					来院导航
+				</view>
+				<view class="right">
+					<img class="icon_right" src="@/static/imgs/me/jiantou.png" alt="" />
+				</view>
+			  </view>
+			  <view class="onebtn" @click="suggestionClick">
+				<view class="left">
+					<image class="icon_left" src="@/static/imgs/me/icon3.png" mode=""></image>
+						投诉建议
+				</view>
+				<view class="right">
+					<img class="icon_right" src="@/static/imgs/me/jiantou.png" alt="" />
+				</view>
+			  </view>
+			  <view class="onebtn">
+				<view class="left">
+					<image class="icon_left" src="@/static/imgs/me/icon4.png" mode=""></image>
+								关于我们
+				</view>
+				<view class="right">
+					<img class="icon_right" src="@/static/imgs/me/jiantou.png" alt="" />
+				</view>
+			  </view>
+			  
+			  <view class="fivebtn">
+						<view class="btn_list">
+							<text>一键咨询</text>
+						</view>
+			  </view>
 		  </view>
-		  <view class="onebtn" @click="handleClick">
-			<view class="left">
-				<image class="icon_left" src="@/static/imgs/me/icon2.png" mode=""></image>
-				来院导航
-			</view>
-			<view class="right">
-				<img class="icon_right" src="@/static/imgs/me/jiantou.png" alt="" />
-			</view>
-		  </view>
-		  <view class="onebtn" @click="suggestionClick">
-			<view class="left">
-				<image class="icon_left" src="@/static/imgs/me/icon3.png" mode=""></image>
-					投诉建议
-			</view>
-			<view class="right">
-				<img class="icon_right" src="@/static/imgs/me/jiantou.png" alt="" />
-			</view>
-		  </view>
-		  <view class="onebtn">
-			<view class="left">
-				<image class="icon_left" src="@/static/imgs/me/icon4.png" mode=""></image>
-							关于我们
-			</view>
-			<view class="right">
-				<img class="icon_right" src="@/static/imgs/me/jiantou.png" alt="" />
-			</view>
-		  </view>
-		  
-		  <view class="fivebtn">
-		  			<view class="btn_list">
-		  				<span>一键咨询</span>
-		  			</view>
-		  </view>
-	  </view>
 	  <!-- <view>
 			  <button type="primary"  @click="handleClick">导航</button>
 	  </view> -->
@@ -125,7 +124,6 @@
 <style lang="scss" scoped>
 	.top{
 		height: 450rpx;
-		background-image: url('@/static/imgs/me/topBg.png');
 		background-size: cover;
 		background-position: center;
 	}
@@ -205,7 +203,7 @@
 				text-align: center;
 				background: linear-gradient(90deg, #0BBAFB, #4285EC);
 				border-radius: 12rpx;
-				span{
+				text{
 					font-family: PingFang SC;
 					font-weight: 500;
 					font-size: 28rpx;

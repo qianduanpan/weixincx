@@ -1,1 +1,1 @@
-<uni-indexed-list wx:if="{{b}}" class="data-v-0628aff4" bindclick="{{a}}" u-i="0628aff4-0" bind:__l="__l" u-p="{{b}}"/>
+<view class="home-page data-v-0628aff4"><view class="serch_name data-v-0628aff4"><uni-search-bar wx:if="{{b}}" class="data-v-0628aff4" bindconfirm="{{a}}" u-i="0628aff4-0" bind:__l="__l" u-p="{{b}}"/></view><view class="serch_list data-v-0628aff4"><uni-indexed-list wx:if="{{d}}" class="data-v-0628aff4" bindclick="{{c}}" u-i="0628aff4-1" bind:__l="__l" u-p="{{d}}"/></view></view>

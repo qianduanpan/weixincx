@@ -13,14 +13,17 @@ require("./config/api.js");
 if (!Math) {
   "./pages/home/home.js";
   "./pages/home/expertInfo.js";
+  "./pages/home/expertUserInfo.js";
   "./pages/home/departInfo.js";
   "./pages/home/guideInfo.js";
   "./pages/home/guideInfoList.js";
   "./pages/department/department.js";
   "./pages/department/details.js";
   "./pages/notice/notice.js";
+  "./pages/notice/noticeList.js";
   "./pages/login/login.js";
   "./pages/me/me.js";
+  "./pages/me/suggestion.js";
 }
 const _sfc_main = {
   globalData: {
