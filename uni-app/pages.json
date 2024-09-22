@@ -9,10 +9,38 @@
       }
     },
 	{
+	      "path": "pages/home/expertInfo", // 专家列表
+	      "style": {
+	        // 页面样式配置
+			"navigationBarTitleText": "专家列表"
+	      }
+	},
+	{
+	      "path": "pages/home/expertUserInfo", // 专家介绍
+	      "style": {
+	        // 页面样式配置
+			"navigationBarTitleText": "专家介绍"
+	      }
+	},
+	{
 	      "path": "pages/home/departInfo", // 科室介绍
 	      "style": {
 	        // 页面样式配置
 			"navigationBarTitleText": "科室介绍"
+	      }
+	},
+	{
+	      "path": "pages/home/guideInfo", // 就医指南
+	      "style": {
+	        // 页面样式配置
+			"navigationBarTitleText": "就医指南"
+	      }
+	},
+	{
+	      "path": "pages/home/guideInfoList", // 就医指南详情
+	      "style": {
+	        // 页面样式配置
+			"navigationBarTitleText": "就医指南详情"
 	      }
 	},
 	{
@@ -34,6 +62,13 @@
 	    "navigationBarTitleText": "公告咨询"
 	  }
 	},
+	{
+	      "path": "pages/notice/noticeList", // 咨询详情
+	      "style": {
+	        // 页面样式配置
+			"navigationBarTitleText": "咨询详情"
+	      }
+	},
     {
       "path": "pages/login/login",
       "style": {
@@ -43,9 +78,17 @@
     {
       "path": "pages/me/me",
       "style": {
-        "navigationBarTitleText": "我的"
+        "navigationBarTitleText": "我的",
+		"navigationStyle": "custom"
       }
-    }
+    },
+	{
+	      "path": "pages/me/suggestion", // 投诉建议
+	      "style": {
+	        // 页面样式配置
+			"navigationBarTitleText": "投诉建议"
+	      }
+	},
   ],
   "tabBar": {
     "color": "#ADADB2;",

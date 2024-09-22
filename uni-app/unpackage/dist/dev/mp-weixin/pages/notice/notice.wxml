@@ -1,1 +1,1 @@
-<view class="home-page data-v-0b680ac6"> 公告咨询</view>
+<view class="home-page data-v-0b680ac6"><uni-tabs wx:if="{{c}}" class="data-v-0b680ac6" bindchange="{{a}}" u-i="0b680ac6-0" bind:__l="__l" bindupdateModelValue="{{b}}" u-p="{{c}}"></uni-tabs><view wx:if="{{d}}" class="data-v-0b680ac6"> 内容A </view><view wx:if="{{e}}" class="data-v-0b680ac6"> 内容B </view></view>

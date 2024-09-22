@@ -31,6 +31,30 @@ const pages = [
     }
   },
   {
+    path: "pages/home/expertInfo",
+    style: {
+      navigationBarTitleText: "\u4E13\u5BB6\u4ECB\u7ECD"
+    }
+  },
+  {
+    path: "pages/home/departInfo",
+    style: {
+      navigationBarTitleText: "\u79D1\u5BA4\u4ECB\u7ECD"
+    }
+  },
+  {
+    path: "pages/home/guideInfo",
+    style: {
+      navigationBarTitleText: "\u5C31\u533B\u6307\u5357"
+    }
+  },
+  {
+    path: "pages/home/guideInfoList",
+    style: {
+      navigationBarTitleText: "\u5C31\u533B\u6307\u5357\u8BE6\u60C5"
+    }
+  },
+  {
     path: "pages/department/department",
     style: {
       navigationBarTitleText: "\u79D1\u5BA4\u4FE1\u606F"

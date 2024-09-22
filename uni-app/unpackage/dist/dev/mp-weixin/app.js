@@ -12,6 +12,10 @@ require("./utils/storageManager/userInfoManager.js");
 require("./config/api.js");
 if (!Math) {
   "./pages/home/home.js";
+  "./pages/home/expertInfo.js";
+  "./pages/home/departInfo.js";
+  "./pages/home/guideInfo.js";
+  "./pages/home/guideInfoList.js";
   "./pages/department/department.js";
   "./pages/department/details.js";
   "./pages/notice/notice.js";

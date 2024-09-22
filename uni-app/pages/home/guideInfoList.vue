@@ -1,0 +1,51 @@
+<template>
+  <view class="guide"> 
+    <view class="header">
+    	就诊须知
+    </view>
+	<view class="content">
+		患者朋友们:<br />请认真阅读如下就诊须知并提前做好准备，感谢您的配合。<br />1.有发热、干咳、乏力等症状的患者可直接至发热门诊就诊;急危重症患者至急诊科就诊。就诊全程规范佩戴口罩。<br />2.我院门诊实行实名制预约就诊，请提前关注“平顶山第六人民医院”预约挂号，根据预约信息“分时段就诊”。<br />3.就诊过程中，请有序候诊、间隔就坐;保持手卫生，乘梯、候诊、缴费、取药时保持有效间距。4.进入诊空时做到“一医一患一诊室"，有序就医。非必要不陪诊，如有需要每名患者限1名家属陪同就诊，避免交叉感染及人员聚集。<br />5.如有其他相关就诊问题请致电0371-56282731。(工作时间)
+	</view>
+	<view class="footer">
+		门诊部<br />2023年1月31日
+	</view>
+  </view>
+</template>
+
+<script setup></script>
+
+<style lang="scss" scoped>
+.guide{
+	margin: 24rpx;
+	height: 1340rpx;
+	background: #FFFFFF;
+	border-radius: 16rpx;
+	border: 0px solid #000000;
+    .header{
+		text-align: center;
+		padding-top: 63rpx;
+		font-family: PingFang SC;
+		font-weight: bold;
+		font-size: 36rpx;
+		color: #37343F;
+		line-height: 48rpx;
+	}
+	.content{
+		padding: 66rpx 59rpx 0 39rpx;
+		font-family: PingFang SC;
+		font-weight: 500;
+		font-size: 28rpx;
+		color: #37343F;
+		line-height: 56rpx;
+	}
+	.footer{
+		text-align: right;
+		margin-right: 41rpx;
+		font-family: PingFang SC;
+		font-weight: 500;
+		font-size: 28rpx;
+		color: #37343F;
+		line-height: 56rpx;
+	}
+}
+</style>

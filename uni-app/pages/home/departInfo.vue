@@ -32,6 +32,34 @@
 			承担全市公共精神卫生任务，是平顶山市(区、县)职工、城乡居民医保定点医院医院占地6万平方米，
 			建筑面积3万平方米，设计床位500张，总投资1.4亿元定位为..
 			</view>
+			
+			<view class="expert">
+				科室专家
+			</view>
+			<view class="expert_list">
+				<view class="left">
+					<image class="pic" src="../../static/imgs/home/pic.png" mode=""></image>
+				</view>
+				<view class="right">
+					<view class="right_name">刘冠军 副主任医师</view>
+					<view class="right_depart">
+						<span>精神科门诊</span>
+					</view>
+					<view class="right_good">擅长：精神疾病临床诊断</view>
+				</view>
+			</view>
+			<view class="expert_list">
+				<view class="left">
+					<image class="pic" src="../../static/imgs/home/pic.png" mode=""></image>
+				</view>
+				<view class="right">
+					<view class="right_name">刘冠军 副主任医师</view>
+					<view class="right_depart">
+						<span>精神科门诊</span>
+					</view>
+					<view class="right_good">擅长：精神疾病临床诊断</view>
+				</view>
+			</view>
 	   </view>
   </view>
 </template>
@@ -99,7 +127,6 @@ page {
 				  }
 			  }
 		 }
-		
 	  }
 
 	  .introduce_title{
@@ -142,6 +169,62 @@ page {
 		// -webkit-line-clamp: 3; /* 设置为想要的行数 */
 		// overflow: hidden;
 		// text-overflow: ellipsis;
+	  }
+	  .expert{
+		  margin-top: 41rpx;
+		  margin-bottom: 48rpx;
+		  margin-left: 26rpx;
+		  font-family: PingFang SC;
+		  font-weight: 800;
+		  font-size: 32rpx;
+		  color: #333333;
+	  }
+	  .expert_list{
+		  display: flex;
+		  height: 224rpx;
+		  background: #FFFFFF;
+		  border-radius: 16rpx;
+		  margin-bottom: 24rpx;
+		  .left{
+			  padding: 32rpx 32rpx 0 32rpx;
+			  .pic{
+				  width: 144rpx;
+				  height: 144rpx;
+			  }
+		  }
+		  .right{
+			  margin-top: 34rpx;
+			  .right_name{
+				  font-family: PingFang SC;
+				  font-weight: bold;
+				  font-size: 28rpx;
+				  color: #37343F;
+				  line-height: 44rpx;
+			  }
+			  .right_depart{
+				 margin-top: 24rpx;
+				 width: 124rpx;
+				 height: 40rpx;
+				 line-height: 30rpx;
+				 background: #2C71FA;
+				 border-radius: 8rpx;
+				 border: 0px solid #000000;
+				 text-align: center;
+				  span{
+					  font-family: PingFang SC;
+					  font-weight: bold;
+					  font-size: 20rpx;
+					  color: #F5F6FB;
+				  }
+			  }
+			  .right_good{
+				  margin-top: 24rpx;
+				  font-family: PingFang SC;
+				  font-weight: 500;
+				  font-size: 24rpx;
+				  color: #ADB0BA;
+			  }
+		  };
 	  }
   }
 

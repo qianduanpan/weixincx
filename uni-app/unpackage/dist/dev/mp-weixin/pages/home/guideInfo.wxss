@@ -1,0 +1,36 @@
+/* 水平间距 */
+/* 水平间距 */
+.guide.data-v-fcd66f5a {
+  padding: 24rpx;
+}
+.guide .guide_list.data-v-fcd66f5a {
+  height: 208rpx;
+  background: #FFFFFF;
+  border-radius: 16rpx;
+  display: flex;
+}
+.guide .guide_list .guide_img.data-v-fcd66f5a {
+  margin: 24rpx;
+  width: 240rpx;
+  height: 160rpx;
+  background: #666666;
+  border-radius: 16rpx;
+  border: 0px solid #000000;
+}
+.guide .guide_list .guide_right.data-v-fcd66f5a {
+  margin: 24rpx;
+}
+.guide .guide_list .guide_right .title.data-v-fcd66f5a {
+  font-family: PingFang SC;
+  font-weight: 500;
+  font-size: 28rpx;
+  color: #37343F;
+  line-height: 44rpx;
+  margin-bottom: 85rpx;
+}
+.guide .guide_list .guide_right .time.data-v-fcd66f5a {
+  font-family: PingFang SC;
+  font-weight: 500;
+  font-size: 24rpx;
+  color: #999999;
+}

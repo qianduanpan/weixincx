@@ -33,7 +33,7 @@
 				 <span>一键咨询</span>
 			</view>
 		    <view class="nav">
-		    	<view class="list">
+		    	<view class="list" @click="expertClick">
 					<image class="list_icon" src="../../static/imgs/home/expert.png" mode=""></image>
 		    		<view class="list_title">
 		    			专家介绍
@@ -45,13 +45,13 @@
 						科室介绍
 					</view>
 				</view>
-				<view class="list">
+				<view class="list" @click="guideClick">
 					<image class="list_icon" src="../../static/imgs/home/guide.png" mode=""></image>
 					<view class="list_title">
 						就医指南
 					</view>
 				</view>
-				<view class="list">
+				<view class="list" @click="navigationClick">
 					<image class="list_icon" src="../../static/imgs/home/navigation.png" mode=""></image>
 					<view class="list_title">
 						来院导航
@@ -81,10 +81,55 @@
 	      console.log('按钮被点击了！');
 	      // 在这里执行点击后的逻辑
 	    };
+		// 专家列表跳转
+		const expertClick = ()=>{
+			 uni.navigateTo({
+			    url: `/pages/home/expertInfo`
+			  });
+		}
 		// 跳转科室介绍页面
-		const departClick = (e)=>{
+		const departClick = ()=>{
 			 uni.navigateTo({
 			    url: `/pages/home/departInfo`
+			  });
+		}
+		// 跳转就医指南
+		const guideClick = ()=>{
+			 uni.navigateTo({
+			    url: `/pages/home/guideInfo`
+			  });
+		}
+		// 跳转来院导航
+		const navigationClick = ()=>{
+			uni.openLocation({
+			    latitude: 34.35, // 目的地纬度
+			    longitude: 113.38, // 目的地经度
+			    name: '河南中医药大学', // 目的地名称
+			    address: '郑州市金水区东明路63号', // 目的地详细地址
+			    success() {
+			      uni.chooseLocation({
+			        success: (res) => {
+			          uni.openLocation({
+			            latitude: res.latitude,
+			            longitude: res.longitude,
+			            name: res.name,
+			            address: res.address,
+			            success() {
+			              console.log('导航启动');
+			            },
+			            fail(err) {
+			              console.error('导航失败', err);
+			            },
+			          });
+			        },
+			        fail(err) {
+			          console.error('选择位置失败', err);
+			        },
+			      });
+			    },
+			    fail(err) {
+			      console.error('打开位置失败', err);
+			    },
 			  });
 		}
 </script>
@@ -209,7 +254,7 @@ page {
 		  height: 100rpx;
 		  line-height: 100rpx;
 		  text-align: center;
-		  background: linear-gradient(90deg, #0BBAFB, #4285EC);
+		  background-image: linear-gradient(90deg, #0BBAFB, #4285EC);
 		  border-radius: 16rpx;
 		  border: 0px solid #000000;
 		  margin: 24rpx 0;

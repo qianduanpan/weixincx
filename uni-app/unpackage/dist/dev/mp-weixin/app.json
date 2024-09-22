@@ -1,6 +1,10 @@
 {
   "pages": [
     "pages/home/home",
+    "pages/home/expertInfo",
+    "pages/home/departInfo",
+    "pages/home/guideInfo",
+    "pages/home/guideInfoList",
     "pages/department/department",
     "pages/department/details",
     "pages/notice/notice",
