@@ -4,7 +4,7 @@
 			<view class="ones">
 				<view class="ones_top">
 					<view class="ones_top_title">
-						精神科门诊
+						{{name}}
 					</view>
 				</view>
 				<view class="ones_main">
@@ -65,16 +65,14 @@
 </template>
 
 <script setup>
-	const handleClick = () => {
-	      console.log('按钮被点击了！');
-	      // 在这里执行点击后的逻辑
-	    };
-		// 跳转科室介绍页面
-		const departClick = (e)=>{
-			 uni.navigateTo({
-			    url: `/pages/home/departInfo`
-			  });
-		}
+import { ref } from 'vue'
+import { useRoute } from 'vue-router';
+ 
+const route = useRoute();
+const name = ref('精神科门诊')
+name.value = route.query.name;
+console.log(name)
+
 </script>
 <style>
 page {

@@ -69,12 +69,12 @@
 	const latitude = ref('39.909')
 	const longitude = ref('116.39742')
 	const covers = ref([{
-				latitude: 34.352,
-				longitude: 113.38,
+				latitude: 33.688235,
+				longitude: 113.264273,
 				iconPath: '@/static/imgs/me/avator.png'
 			}, {
-				latitude: 34.351,
-				longitude: 113.39,
+				latitude: 33.688235,
+				longitude: 113.264273,
 				iconPath: '@/static/imgs/me/avator.png'
 			}])
 			// 投诉建议
@@ -87,10 +87,10 @@
 	      console.log('按钮被点击了！');
 	      // 在这里执行点击后的逻辑
 		  uni.openLocation({
-		      latitude: 34.35, // 目的地纬度
-		      longitude: 113.38, // 目的地经度
-		      name: '河南中医药大学', // 目的地名称
-		      address: '郑州市金水区东明路63号', // 目的地详细地址
+		      latitude: 33.688235, // 目的地纬度
+		      longitude: 113.264273, // 目的地经度
+		      name: '平顶山市第六人民医院', // 目的地名称
+		      address: '湛河区平桐路沙河桥100米平顶山市第六人民医院', // 目的地详细地址
 		      success() {
 		        uni.chooseLocation({
 		          success: (res) => {

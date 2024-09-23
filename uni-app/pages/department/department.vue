@@ -17,10 +17,11 @@
 	list.value = airport.list
 	const bindClick = (e)=>{
 		console.log('点击item，返回数据' + JSON.stringify(e),e)
-		// const params = e.item.name
-		//  uni.navigateTo({
-		//     url: `/pages/department/details?param1=${params}` // 假设详情页面路径为/pages/details/details
-		//   });
+		const params = e.item.name
+		// console.log(params,'99')
+		 uni.navigateTo({
+		    url: `/pages/home/departInfo?name=${params}` // 假设详情页面路径为/pages/details/details
+		  });
 	}
 	
 	const search = ()=>{

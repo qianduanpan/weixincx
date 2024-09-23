@@ -1,7 +1,7 @@
 <template>
   <view class="home-page"> 
 	   <view class="top" >
-		  <text>首页</text>
+		  <text>平顶山市第六人民医院</text>
 		  <image class="bg" src="../../static/imgs/home/lunbo.png" mode=""></image>
 	   </view>
 	   <view class="center">
@@ -89,9 +89,12 @@
 		}
 		// 跳转科室介绍页面
 		const departClick = ()=>{
-			 uni.navigateTo({
-			    url: `/pages/home/departInfo`
-			  });
+			 // uni.navigateTo({
+			 //    url: `/pages/home/departInfo`
+			 //  });
+			  uni.switchTab({
+			     url: `/pages/department/department` // 假设详情页面路径为/pages/details/details
+			   });
 		}
 		// 跳转就医指南
 		const guideClick = ()=>{
@@ -102,10 +105,10 @@
 		// 跳转来院导航
 		const navigationClick = ()=>{
 			uni.openLocation({
-			    latitude: 34.35, // 目的地纬度
-			    longitude: 113.38, // 目的地经度
-			    name: '河南中医药大学', // 目的地名称
-			    address: '郑州市金水区东明路63号', // 目的地详细地址
+			    latitude: 33.688235, // 目的地纬度
+			    longitude: 113.264273, // 目的地经度
+			    name: '平顶山市第六人民医院', // 目的地名称
+			    address: '湛河区平桐路沙河桥100米平顶山市第六人民医院', // 目的地详细地址
 			    success() {
 			      uni.chooseLocation({
 			        success: (res) => {

@@ -30,9 +30,8 @@ page {
   margin: 0 24rpx;
 }
 .home-page .center .ones.data-v-92bb8f34 {
-  padding: 24rpx 24rpx 0 24rpx;
+  padding: 24rpx;
   margin-top: 170rpx;
-  height: 264rpx;
   background: #FFFFFF;
   border-radius: 16rpx;
   border: 0px solid #000000;
@@ -85,6 +84,10 @@ page {
   vertical-align: middle;
 }
 .home-page .center .ones .ones_main .ones_main_bottom.data-v-92bb8f34 {
+  display: flex;
+  /* 使用flex布局 */
+  align-items: flex-start;
+  /* 垂直方向上对齐 */
   margin-top: 23rpx;
   font-family: PingFang SC;
   font-weight: 500;
@@ -96,6 +99,15 @@ page {
   height: 26rpx;
   margin-right: 16rpx;
   vertical-align: middle;
+}
+.home-page .center .ones .ones_main .ones_main_bottom text.data-v-92bb8f34 {
+  width: 100%;
+  flex: 1;
+  /* 允许文本占据容器剩余的空间 */
+  word-break: break-all;
+  /* 允许在单词内换行 */
+  overflow-wrap: break-word;
+  /* 允许在单词内换行，对于长单词或者URL地址的处理 */
 }
 .home-page .center .btn.data-v-92bb8f34 {
   width: 702rpx;

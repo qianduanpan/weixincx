@@ -12,12 +12,12 @@ const _sfc_main = {
     common_vendor.ref("39.909");
     common_vendor.ref("116.39742");
     common_vendor.ref([{
-      latitude: 34.352,
-      longitude: 113.38,
+      latitude: 33.688235,
+      longitude: 113.264273,
       iconPath: "@/static/imgs/me/avator.png"
     }, {
-      latitude: 34.351,
-      longitude: 113.39,
+      latitude: 33.688235,
+      longitude: 113.264273,
       iconPath: "@/static/imgs/me/avator.png"
     }]);
     const suggestionClick = () => {
@@ -28,10 +28,10 @@ const _sfc_main = {
     const handleClick = () => {
       console.log("\u6309\u94AE\u88AB\u70B9\u51FB\u4E86\uFF01");
       common_vendor.index.openLocation({
-        latitude: 34.35,
-        longitude: 113.38,
-        name: "\u6CB3\u5357\u4E2D\u533B\u836F\u5927\u5B66",
-        address: "\u90D1\u5DDE\u5E02\u91D1\u6C34\u533A\u4E1C\u660E\u8DEF63\u53F7",
+        latitude: 33.688235,
+        longitude: 113.264273,
+        name: "\u5E73\u9876\u5C71\u5E02\u7B2C\u516D\u4EBA\u6C11\u533B\u9662",
+        address: "\u6E5B\u6CB3\u533A\u5E73\u6850\u8DEF\u6C99\u6CB3\u6865100\u7C73\u5E73\u9876\u5C71\u5E02\u7B2C\u516D\u4EBA\u6C11\u533B\u9662",
         success() {
           common_vendor.index.chooseLocation({
             success: (res) => {

@@ -50,13 +50,6 @@
 	  }
 	},
 	{
-	      "path": "pages/department/details", // 详情页面路径
-	      "style": {
-	        // 页面样式配置
-			"navigationBarTitleText": "科室详情"
-	      }
-    },
-	{
 	  "path": "pages/notice/notice",
 	  "style": {
 	    "navigationBarTitleText": "公告咨询"
