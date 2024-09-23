@@ -34,7 +34,7 @@
     const rous = ref([
 	        { value: 0, text: "一级" },
 	        { value: 1, text: "二级" },
-	        { value: 2, text: "三级级" },
+	        { value: 2, text: "三级" },
 	      ]);
 	const alignmentFormData = ref({
 		name: '',

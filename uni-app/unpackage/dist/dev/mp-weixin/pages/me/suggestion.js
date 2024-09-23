@@ -25,7 +25,7 @@ const _sfc_main = {
     const rous = common_vendor.ref([
       { value: 0, text: "\u4E00\u7EA7" },
       { value: 1, text: "\u4E8C\u7EA7" },
-      { value: 2, text: "\u4E09\u7EA7\u7EA7" }
+      { value: 2, text: "\u4E09\u7EA7" }
     ]);
     const alignmentFormData = common_vendor.ref({
       name: "",

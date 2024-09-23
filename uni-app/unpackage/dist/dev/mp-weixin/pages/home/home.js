@@ -2,6 +2,25 @@
 var common_vendor = require("../../common/vendor.js");
 const _sfc_main = {
   setup(__props) {
+    common_vendor.ref("0");
+    common_vendor.ref("dot");
+    common_vendor.ref([
+      {
+        colorClass: "uni-bg-red",
+        url: "https://qiniu-web-assets.dcloud.net.cn/unidoc/zh/shuijiao.jpg",
+        content: "\u5185\u5BB9 A"
+      },
+      {
+        colorClass: "uni-bg-green",
+        url: "https://qiniu-web-assets.dcloud.net.cn/unidoc/zh/shuijiao.jpg",
+        content: "\u5185\u5BB9 B"
+      },
+      {
+        colorClass: "uni-bg-blue",
+        url: "https://qiniu-web-assets.dcloud.net.cn/unidoc/zh/shuijiao.jpg",
+        content: "\u5185\u5BB9 C"
+      }
+    ]);
     const expertClick = () => {
       common_vendor.index.navigateTo({
         url: `/pages/home/expertInfo`

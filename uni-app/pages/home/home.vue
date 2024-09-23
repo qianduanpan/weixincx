@@ -3,6 +3,15 @@
 	   <view class="top" >
 		  <text>平顶山市第六人民医院</text>
 		  <image class="bg" src="../../static/imgs/home/lunbo.png" mode=""></image>
+		  <!-- <uni-swiper-dot :info="info" :current="current" field="content" :mode="mode" >
+		  	<swiper class="swiper-box" @change="change" style="height: 195px;">
+		  		<swiper-item v-for="(item ,index) in info" :key="index">
+		  			<view class="swiper-item">
+		  				<image class="bg" src="../../static/imgs/home/lunbo.png" mode=""></image>
+		  			</view>
+		  		</swiper-item>
+		  	</swiper>
+		  </uni-swiper-dot> -->
 	   </view>
 	   <view class="center">
 			<view class="ones">
@@ -21,7 +30,7 @@
 				<view class="ones_main">
 					<view class="ones_main_top">
 						<image class="icons" src="../../static/imgs/home/pohon.png" mode=""></image>
-						挂号咨询电话：0375-6166131
+						<text>挂号咨询电话：0375-6166131</text>
 					</view>
 					<view class="ones_main_bottom">
 						<image class="icons" src="../../static/imgs/home/address.png" mode=""></image>
@@ -72,11 +81,34 @@
 			承担全市公共精神卫生任务，是平顶山市(区、县)职工、城乡居民医保定点医院医院占地6万平方米，
 			建筑面积3万平方米，设计床位500张，总投资1.4亿元定位为..
 			</view>
+			<view class="empty"></view>
 	   </view>
   </view>
 </template>
 
 <script setup>
+	import { ref } from 'vue'
+	const current = ref('0');
+	const mode = ref('dot');
+	const info = ref([{
+						colorClass: 'uni-bg-red',
+						url: 'https://qiniu-web-assets.dcloud.net.cn/unidoc/zh/shuijiao.jpg',
+						content: '内容 A'
+					},
+					{
+						colorClass: 'uni-bg-green',
+						url: 'https://qiniu-web-assets.dcloud.net.cn/unidoc/zh/shuijiao.jpg',
+						content: '内容 B'
+					},
+					{
+						colorClass: 'uni-bg-blue',
+						url: 'https://qiniu-web-assets.dcloud.net.cn/unidoc/zh/shuijiao.jpg',
+						content: '内容 C'
+					}]
+					)
+	const change = (e)=> {
+		current.value = e.detail.current
+		};
 	const handleClick = () => {
 	      console.log('按钮被点击了！');
 	      // 在这里执行点击后的逻辑
@@ -210,6 +242,8 @@ page {
 		 .ones_main{
 			 margin-top: 32rpx;
 			  .ones_main_top{
+				  display: flex; /* 使用flex布局 */
+				   align-items: flex-start; /* 垂直方向上对齐 */
 				  font-family: PingFang SC;
 				  font-weight: 500;
 				  font-size: 24rpx;
@@ -219,6 +253,14 @@ page {
 					  height: 26rpx;
 					  margin-right: 16rpx;
 					  vertical-align: middle;
+					  margin-top: 2px;
+				  }
+				  text{
+					width: 100%;
+					 flex: 1; /* 允许文本占据容器剩余的空间 */
+					  word-break: break-all; /* 允许在单词内换行 */
+					  overflow-wrap: break-word; /* 允许在单词内换行，对于长单词或者URL地址的处理 */
+				  
 				  }
 			  }
 			  .ones_main_bottom{
@@ -230,10 +272,11 @@ page {
 				  font-size: 24rpx;
 				  color: #999999;
 				  .icons{
-					  width: 26rpx;
-					  height: 26rpx;
+					  width: 22rpx;
+					  height: 28rpx;
 					  margin-right: 16rpx;
 					  vertical-align: middle;
+					  margin-top: 2px;
 				  }
 				  text{
 						width: 100%;
@@ -311,7 +354,6 @@ page {
 	  }
 	  .introduce_content{
 		  text-indent: 2em; /* 设置首行缩进为2em */
-		  height: 480rpx;
 		  background: #FFFFFF;
 		  border-radius: 0rpx 0rpx 24rpx 24rpx;
 		  font-family: PingFang SC;
@@ -325,6 +367,9 @@ page {
 		// -webkit-line-clamp: 3; /* 设置为想要的行数 */
 		// overflow: hidden;
 		// text-overflow: ellipsis;
+	  }
+	  .empty{
+		  height: 24rpx;
 	  }
   }
 

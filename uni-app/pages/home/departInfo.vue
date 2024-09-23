@@ -4,17 +4,17 @@
 			<view class="ones">
 				<view class="ones_top">
 					<view class="ones_top_title">
-						精神科门诊
+						{{name}}
 					</view>
 				</view>
 				<view class="ones_main">
 					<view class="ones_main_top">
 						<image class="icons" src="../../static/imgs/home/pohon.png" mode=""></image>
-						科室电话：0375-6166131
+						<text>科室电话：0375-6166131</text>
 					</view>
 					<view class="ones_main_bottom">
 						<image class="icons" src="../../static/imgs/home/address.png" mode=""></image>
-						科室位置：三楼东北角
+						<text>科室位置：三楼东北角</text>
 					</view>
 				</view>
 			</view>
@@ -60,19 +60,23 @@
 					<view class="right_good">擅长：精神疾病临床诊断</view>
 				</view>
 			</view>
+			<view class="empty"></view>
 	   </view>
   </view>
 </template>
 
 <script setup>
 import { ref } from 'vue'
+import {onLoad} from "@dcloudio/uni-app";
 import { useRoute } from 'vue-router';
  
 const route = useRoute();
 const name = ref('精神科门诊')
-name.value = route.query.name;
-console.log(name)
-
+onLoad(options => {
+  // 从URL中获取传递的参数
+  console.log(options,'999')
+  name.value = options.name;
+});
 </script>
 <style>
 page {
@@ -100,6 +104,8 @@ page {
 		 .ones_main{
 			 margin-top: 32rpx;
 			  .ones_main_top{
+				  display: flex; /* 使用flex布局 */
+				   align-items: flex-start; /* 垂直方向上对齐 */
 				  font-family: PingFang SC;
 				  font-weight: 500;
 				  font-size: 24rpx;
@@ -109,19 +115,37 @@ page {
 					  height: 26rpx;
 					  margin-right: 16rpx;
 					  vertical-align: middle;
+					  margin-top: 2rpx;
+				  }
+				  text{
+					width: 100%;
+					 flex: 1; /* 允许文本占据容器剩余的空间 */
+					  word-break: break-all; /* 允许在单词内换行 */
+					  overflow-wrap: break-word; /* 允许在单词内换行，对于长单词或者URL地址的处理 */
+				  
 				  }
 			  }
 			  .ones_main_bottom{
+				  display: flex; /* 使用flex布局 */
+				   align-items: flex-start; /* 垂直方向上对齐 */
 				  margin-top: 23rpx;
 				  font-family: PingFang SC;
 				  font-weight: 500;
 				  font-size: 24rpx;
 				  color: #999999;
 				  .icons{
-					  width: 26rpx;
-					  height: 26rpx;
+					  width: 22rpx;
+					  height: 28rpx;
 					  margin-right: 16rpx;
 					  vertical-align: middle;
+					   margin-top: 2rpx;
+				  }
+				  text{
+					width: 100%;
+					 flex: 1; /* 允许文本占据容器剩余的空间 */
+					  word-break: break-all; /* 允许在单词内换行 */
+					  overflow-wrap: break-word; /* 允许在单词内换行，对于长单词或者URL地址的处理 */
+				  
 				  }
 			  }
 		 }
@@ -168,6 +192,7 @@ page {
 		// overflow: hidden;
 		// text-overflow: ellipsis;
 	  }
+	
 	  .expert{
 		  margin-top: 41rpx;
 		  margin-bottom: 48rpx;
@@ -223,6 +248,9 @@ page {
 				  color: #ADB0BA;
 			  }
 		  };
+	  }
+	  .empty{
+	  		  height: 24rpx;
 	  }
   }
 

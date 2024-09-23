@@ -25,6 +25,10 @@ page {
   margin-top: 32rpx;
 }
 .home-page .center .ones .ones_main .ones_main_top.data-v-fd415cee {
+  display: flex;
+  /* 使用flex布局 */
+  align-items: flex-start;
+  /* 垂直方向上对齐 */
   font-family: PingFang SC;
   font-weight: 500;
   font-size: 24rpx;
@@ -35,8 +39,22 @@ page {
   height: 26rpx;
   margin-right: 16rpx;
   vertical-align: middle;
+  margin-top: 2rpx;
+}
+.home-page .center .ones .ones_main .ones_main_top text.data-v-fd415cee {
+  width: 100%;
+  flex: 1;
+  /* 允许文本占据容器剩余的空间 */
+  word-break: break-all;
+  /* 允许在单词内换行 */
+  overflow-wrap: break-word;
+  /* 允许在单词内换行，对于长单词或者URL地址的处理 */
 }
 .home-page .center .ones .ones_main .ones_main_bottom.data-v-fd415cee {
+  display: flex;
+  /* 使用flex布局 */
+  align-items: flex-start;
+  /* 垂直方向上对齐 */
   margin-top: 23rpx;
   font-family: PingFang SC;
   font-weight: 500;
@@ -44,10 +62,20 @@ page {
   color: #999999;
 }
 .home-page .center .ones .ones_main .ones_main_bottom .icons.data-v-fd415cee {
-  width: 26rpx;
-  height: 26rpx;
+  width: 22rpx;
+  height: 28rpx;
   margin-right: 16rpx;
   vertical-align: middle;
+  margin-top: 2rpx;
+}
+.home-page .center .ones .ones_main .ones_main_bottom text.data-v-fd415cee {
+  width: 100%;
+  flex: 1;
+  /* 允许文本占据容器剩余的空间 */
+  word-break: break-all;
+  /* 允许在单词内换行 */
+  overflow-wrap: break-word;
+  /* 允许在单词内换行，对于长单词或者URL地址的处理 */
 }
 .home-page .center .introduce_title.data-v-fd415cee {
   margin-top: 24rpx;
@@ -141,6 +169,9 @@ page {
   font-weight: 500;
   font-size: 24rpx;
   color: #ADB0BA;
+}
+.home-page .center .empty.data-v-fd415cee {
+  height: 24rpx;
 }
 .home-page.data-v-fd415cee::-webkit-scrollbar {
   display: none;
