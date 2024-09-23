@@ -17,6 +17,10 @@ const _sfc_main = {
     list.value = pages_department_airport.airport.list;
     const bindClick = (e) => {
       console.log("\u70B9\u51FBitem\uFF0C\u8FD4\u56DE\u6570\u636E" + JSON.stringify(e), e);
+      const params = e.item.name;
+      common_vendor.index.navigateTo({
+        url: `/pages/home/departInfo?name=${params}`
+      });
     };
     const search = () => {
     };

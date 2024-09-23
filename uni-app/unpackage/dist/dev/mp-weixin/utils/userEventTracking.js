@@ -45,7 +45,7 @@ const pages = [
   {
     path: "pages/home/departInfo",
     style: {
-      navigationBarTitleText: "\u79D1\u5BA4\u4ECB\u7ECD"
+      navigationBarTitleText: "\u79D1\u5BA4\u8BE6\u60C5"
     }
   },
   {
@@ -63,13 +63,7 @@ const pages = [
   {
     path: "pages/department/department",
     style: {
-      navigationBarTitleText: "\u79D1\u5BA4\u4FE1\u606F"
-    }
-  },
-  {
-    path: "pages/department/details",
-    style: {
-      navigationBarTitleText: "\u79D1\u5BA4\u8BE6\u60C5"
+      navigationBarTitleText: "\u79D1\u5BA4\u5217\u8868"
     }
   },
   {

@@ -4,7 +4,7 @@
 			<view class="ones">
 				<view class="ones_top">
 					<view class="ones_top_title">
-						{{name}}
+						精神科门诊
 					</view>
 				</view>
 				<view class="ones_main">

@@ -7,7 +7,6 @@
     "pages/home/guideInfo",
     "pages/home/guideInfoList",
     "pages/department/department",
-    "pages/department/details",
     "pages/notice/notice",
     "pages/notice/noticeList",
     "pages/login/login",

@@ -1,8 +1,0 @@
-/* 水平间距 */
-/* 水平间距 */
-.home-page.data-v-94d58384::-webkit-scrollbar {
-  display: none;
-  width: 0;
-  height: 0;
-  color: transparent;
-}

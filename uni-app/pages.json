@@ -26,7 +26,7 @@
 	      "path": "pages/home/departInfo", // 科室介绍
 	      "style": {
 	        // 页面样式配置
-			"navigationBarTitleText": "科室介绍"
+			"navigationBarTitleText": "科室详情"
 	      }
 	},
 	{
@@ -46,7 +46,7 @@
 	{
 	  "path": "pages/department/department",
 	  "style": {
-	    "navigationBarTitleText": "科室信息"
+	    "navigationBarTitleText": "科室列表"
 	  }
 	},
 	{

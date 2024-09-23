@@ -18,7 +18,6 @@ if (!Math) {
   "./pages/home/guideInfo.js";
   "./pages/home/guideInfoList.js";
   "./pages/department/department.js";
-  "./pages/department/details.js";
   "./pages/notice/notice.js";
   "./pages/notice/noticeList.js";
   "./pages/login/login.js";

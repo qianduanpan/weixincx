@@ -8,8 +8,8 @@ const _sfc_main = {
       });
     };
     const departClick = () => {
-      common_vendor.index.navigateTo({
-        url: `/pages/home/departInfo`
+      common_vendor.index.switchTab({
+        url: `/pages/department/department`
       });
     };
     const guideClick = () => {
